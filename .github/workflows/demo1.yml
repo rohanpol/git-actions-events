@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Test code
-        run: npm run test
+        run: npm test -- --browsers=ChromeHeadless --watch=false
       - name: Build code
         run: npm run build
       - name: Deploy project
